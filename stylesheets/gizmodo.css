@@ -115,13 +115,21 @@ body #page-header #gizmodo-logo h1 {
 /* line 43, ../sass/gizmodo.scss */
 body #page-header #follow-gizmodo {
   display: none;
+  text-decoration: none;
+  color: #28ADE6;
+  font-size: 12px;
 }
-/* line 47, ../sass/gizmodo.scss */
+/* line 48, ../sass/gizmodo.scss */
+body #page-header #follow-gizmodo img {
+  width: 12px;
+  padding: 0% 6px;
+}
+/* line 53, ../sass/gizmodo.scss */
 body #page-header #login-button {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  /* line 47, ../sass/gizmodo.scss */
+  /* line 53, ../sass/gizmodo.scss */
   body #page-header #login-button {
     display: inline-block;
     vertical-align: middle;
@@ -141,17 +149,17 @@ body #page-header #login-button {
     letter-spacing: 0.3px;
   }
 }
-/* line 60, ../sass/gizmodo.scss */
+/* line 66, ../sass/gizmodo.scss */
 body #page-header #login-button:hover {
   background-color: #28ADE6;
   color: #fff;
 }
-/* line 64, ../sass/gizmodo.scss */
+/* line 70, ../sass/gizmodo.scss */
 body #page-header #search-icon {
   display: none;
 }
 @media only screen and (min-width: 800px) {
-  /* line 64, ../sass/gizmodo.scss */
+  /* line 70, ../sass/gizmodo.scss */
   body #page-header #search-icon {
     display: inline-block;
     vertical-align: middle;
@@ -160,7 +168,7 @@ body #page-header #search-icon {
     *display: inline;
     height: 60px;
   }
-  /* line 69, ../sass/gizmodo.scss */
+  /* line 75, ../sass/gizmodo.scss */
   body #page-header #search-icon img {
     height: 35%;
     width: 20px;

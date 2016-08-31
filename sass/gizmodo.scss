@@ -40,9 +40,15 @@ body {
                 padding-left: 30%;
             }
         }
-        #follow-gizmodo
-        {
+        #follow-gizmodo {
             display: none;
+            text-decoration: none;
+            color: #28ADE6;
+            font-size: 12px;
+            img {
+                width: 12px;
+                padding: 0% 6px;
+            }
         }
         #login-button {
             display: none;
