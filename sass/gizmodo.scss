@@ -1,0 +1,76 @@
+@import "compass";
+@import "compass/reset";
+$primaryfont: sans-serif;
+$bordercolor: 1px solid #ddd;
+@mixin dimension($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin color($bgcolor, $color) {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+body {
+    font-family: $primaryfont;
+    #page-header {
+        height: 60px;
+        border-bottom: $bordercolor;
+        #navigation-burger-icon {
+            @include inline-block;
+            @include dimension(55px, 100%);
+            img {
+                @include dimension(70%, 75%);
+                margin-top: 10px;
+                padding: 0% 30%;
+            }
+        }
+        #gizmodo-logo {
+            font-family: Nunito;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            @include inline-block;
+            height: inherit;
+            h1 {
+                margin-top: 10px;
+            }
+            @media only screen and (min-width: 800px) {
+                padding-left: 30%;
+            }
+        }
+        #follow-gizmodo
+        {
+            display: none;
+        }
+        #login-button {
+            display: none;
+            @media only screen and (min-width: 600px) {
+                @include inline-block;
+                @include float-right;
+                @include color(#fff, #aaa);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                @include border-radius(4px);
+                margin: 15px;
+                padding: 6px 12px 6px 12px;
+                font-family: 'Roboto Condensed';
+                letter-spacing: 0.3px;
+            }
+            &:hover {
+                @include color(#28ADE6, #fff);
+            }
+        }
+        #search-icon {
+            display: none;
+            @media only screen and(min-width: 800px) {
+                @include inline-block;
+                height: 60px;
+                img {
+                    @include dimension(20px, 35%);
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}

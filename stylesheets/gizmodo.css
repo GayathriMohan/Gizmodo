@@ -1,0 +1,169 @@
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/gizmodo.scss */
+body {
+  font-family: sans-serif;
+}
+/* line 17, ../sass/gizmodo.scss */
+body #page-header {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 20, ../sass/gizmodo.scss */
+body #page-header #navigation-burger-icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 100%;
+  width: 55px;
+}
+/* line 23, ../sass/gizmodo.scss */
+body #page-header #navigation-burger-icon img {
+  height: 75%;
+  width: 70%;
+  margin-top: 10px;
+  padding: 0% 30%;
+}
+/* line 29, ../sass/gizmodo.scss */
+body #page-header #gizmodo-logo {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: inherit;
+}
+/* line 36, ../sass/gizmodo.scss */
+body #page-header #gizmodo-logo h1 {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 800px) {
+  /* line 29, ../sass/gizmodo.scss */
+  body #page-header #gizmodo-logo {
+    padding-left: 30%;
+  }
+}
+/* line 43, ../sass/gizmodo.scss */
+body #page-header #follow-gizmodo {
+  display: none;
+}
+/* line 47, ../sass/gizmodo.scss */
+body #page-header #login-button {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  /* line 47, ../sass/gizmodo.scss */
+  body #page-header #login-button {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    float: right;
+    background-color: #fff;
+    color: #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 6px 12px 6px 12px;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.3px;
+  }
+}
+/* line 60, ../sass/gizmodo.scss */
+body #page-header #login-button:hover {
+  background-color: #28ADE6;
+  color: #fff;
+}
+/* line 64, ../sass/gizmodo.scss */
+body #page-header #search-icon {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  /* line 64, ../sass/gizmodo.scss */
+  body #page-header #search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    height: 60px;
+  }
+  /* line 69, ../sass/gizmodo.scss */
+  body #page-header #search-icon img {
+    height: 35%;
+    width: 20px;
+    margin-top: 18px;
+  }
+}
