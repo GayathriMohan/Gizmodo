@@ -1,0 +1,48 @@
+main {
+    section {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        border-bottom: $bordercolor;
+        article {
+            width: 70%;
+            @include inline-block;
+            padding: 5% 0% 5% 5%;
+            @media only screen and (min-width: $firstbreakpoint) {
+                width: 52vw;
+                padding: 2.5% 0% 2.5% 3%;
+            }
+            figure {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            h3 {
+                position: absolute;
+                left: 0;
+                bottom: 3px;
+                line-height: 22px;
+                background-color: black;
+                white-space: normal;
+                font-family: Roboto Condensed;
+                color: white;
+                padding: 0 7px;
+                font-size: 21px;
+            }
+            #first-article-header {
+                width: 70%;
+            }
+            #second-article-header {
+                width: 80%;
+            }
+            #third-article-header {
+                width: 90%;
+            }
+        }
+        #thirdchild {
+            padding-right: 5%;
+        }
+    }
+}

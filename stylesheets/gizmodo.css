@@ -180,3 +180,66 @@ a {
     padding-bottom: 40px;
   }
 }
+
+/* line 2, ../sass/_scroller.scss */
+main section {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  border-bottom: 1px solid #ddd;
+}
+/* line 8, ../sass/_scroller.scss */
+main section article {
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding: 5% 0% 5% 5%;
+}
+@media only screen and (min-width: 600px) {
+  /* line 8, ../sass/_scroller.scss */
+  main section article {
+    width: 52vw;
+    padding: 2.5% 0% 2.5% 3%;
+  }
+}
+/* line 16, ../sass/_scroller.scss */
+main section article figure {
+  position: relative;
+}
+/* line 18, ../sass/_scroller.scss */
+main section article figure img {
+  width: 100%;
+}
+/* line 22, ../sass/_scroller.scss */
+main section article h3 {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  line-height: 22px;
+  background-color: black;
+  white-space: normal;
+  font-family: Roboto Condensed;
+  color: white;
+  padding: 0 7px;
+  font-size: 21px;
+}
+/* line 34, ../sass/_scroller.scss */
+main section article #first-article-header {
+  width: 70%;
+}
+/* line 37, ../sass/_scroller.scss */
+main section article #second-article-header {
+  width: 80%;
+}
+/* line 40, ../sass/_scroller.scss */
+main section article #third-article-header {
+  width: 90%;
+}
+/* line 44, ../sass/_scroller.scss */
+main section #thirdchild {
+  padding-right: 5%;
+}
