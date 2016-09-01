@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $('#gizmodo-heading').mouseenter(function() {
+    $('#logo-division').mouseenter(function() {
         $('#follow-gizmodo').show();
     });
-    $('#gizmodo-heading').mouseleave(function() {
+    $('#logo-division').mouseleave(function() {
         $('#follow-gizmodo').hide();
     });
 });

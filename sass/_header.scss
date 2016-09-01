@@ -6,26 +6,37 @@
         padding-left: 16px;
         padding-top: 16px;
     }
-    h1 {
-        @include inline-block;
-        @include font(Nunito, 40px, bold);
-        @include align(top, 15px);
-        @media only screen and (min-width: 800px) {
+    div {
+        width: 292px;
+        vertical-align: top;
+        height: 100%;
+        display: inline-block;
+        @media only screen and (min-width: $secondbreakpoint) {
+            width: 35%;
             padding-left: 30%;
         }
-    }
-    #follow-gizmodo {
-        color: #28ADE6;
-        @include font(Roboto Condensed, 13px, normal);
-        @include inline-block;
-        @include align(top, 25px);
-        img {
-            width: 12px;
-            padding: 0% 6px;
+        h1 {
+            @include inline-block;
+            @include font(Nunito, 40px, bold);
+            @include align(top, 15px);
+            letter-spacing: 2px;
+        }
+        #follow-gizmodo {
+            color: #28ADE6;
+            @include font(Roboto Condensed, 13px, normal);
+            @include inline-block;
+            @include align(top, 25px);
+            img {
+                width: 12px;
+                padding: 0% 6px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     #login-button {
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: $firstbreakpoint) {
             @include inline-block;
             @include float-right;
             @include color(#fff, #aaa);
@@ -41,7 +52,7 @@
         }
     }
     #search-icon {
-        @media only screen and(min-width: 800px) {
+        @media only screen and(min-width: $secondbreakpoint) {
             @include inline-block;
             width: 20px;
             padding-bottom: 40px;

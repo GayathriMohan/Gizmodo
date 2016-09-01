@@ -68,12 +68,14 @@ body {
   background-color: sans-serif;
 }
 
-/* line 4, ../sass/_common.scss */
-#login-button, #search-icon, #follow-gizmodo {
+/* line 5, ../sass/_common.scss */
+#login-button,
+#search-icon,
+#follow-gizmodo {
   display: none;
 }
 
-/* line 7, ../sass/_common.scss */
+/* line 11, ../sass/_common.scss */
 a {
   text-decoration: none;
 }
@@ -90,7 +92,21 @@ a {
   padding-top: 16px;
 }
 /* line 9, ../sass/_header.scss */
-#page-header h1 {
+#page-header div {
+  width: 292px;
+  vertical-align: top;
+  height: 100%;
+  display: inline-block;
+}
+@media only screen and (min-width: 800px) {
+  /* line 9, ../sass/_header.scss */
+  #page-header div {
+    width: 35%;
+    padding-left: 30%;
+  }
+}
+/* line 18, ../sass/_header.scss */
+#page-header div h1 {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -101,15 +117,10 @@ a {
   font-weight: bold;
   vertical-align: top;
   padding-top: 15px;
+  letter-spacing: 2px;
 }
-@media only screen and (min-width: 800px) {
-  /* line 9, ../sass/_header.scss */
-  #page-header h1 {
-    padding-left: 30%;
-  }
-}
-/* line 17, ../sass/_header.scss */
-#page-header #follow-gizmodo {
+/* line 24, ../sass/_header.scss */
+#page-header div #follow-gizmodo {
   color: #28ADE6;
   font-family: Roboto Condensed;
   font-size: 13px;
@@ -122,13 +133,17 @@ a {
   vertical-align: top;
   padding-top: 25px;
 }
-/* line 22, ../sass/_header.scss */
-#page-header #follow-gizmodo img {
+/* line 29, ../sass/_header.scss */
+#page-header div #follow-gizmodo img {
   width: 12px;
   padding: 0% 6px;
 }
+/* line 33, ../sass/_header.scss */
+#page-header div #follow-gizmodo:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 600px) {
-  /* line 27, ../sass/_header.scss */
+  /* line 38, ../sass/_header.scss */
   #page-header #login-button {
     display: inline-block;
     vertical-align: middle;
@@ -148,13 +163,13 @@ a {
     letter-spacing: 0.3px;
   }
 }
-/* line 39, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 #page-header #login-button:hover {
   background-color: #28ADE6;
   color: #fff;
 }
 @media only screen and (min-width: 800px) {
-  /* line 43, ../sass/_header.scss */
+  /* line 54, ../sass/_header.scss */
   #page-header #search-icon {
     display: inline-block;
     vertical-align: middle;
