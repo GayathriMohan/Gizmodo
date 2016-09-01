@@ -1,0 +1,15 @@
+@mixin color($bgcolor, $color) {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+@mixin align($verticalalign, $paddingtop) {
+    vertical-align: $verticalalign;
+    padding-top: $paddingtop;
+}
+
+@mixin font($family, $size, $fweight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $fweight;
+}
