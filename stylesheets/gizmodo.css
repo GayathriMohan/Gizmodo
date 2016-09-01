@@ -180,8 +180,3 @@ a {
     padding-bottom: 40px;
   }
 }
-
-/* line 1, ../sass/_scroller.scss */
-.article-scroller-wrapper {
-  background-color: pink;
-}
