@@ -13,9 +13,9 @@ main {
         }
         article {
             @include inline-block;
-            @include articles(74%, 4%);
+            @include article-size(74%, 4%);
             @media only screen and (min-width: $firstbreakpoint) {
-                @include articles(54%, 2%);
+                @include article-size(54%, 2%);
             }
             @media only screen and (min-width: $secondbreakpoint) {
                 width: 31%;

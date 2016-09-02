@@ -14,7 +14,7 @@
     font-weight: $fweight;
 }
 
-@mixin articles($width, $marginright) {
+@mixin article-size($width, $marginright) {
     width: $width;
     margin-right: $marginright;
 }

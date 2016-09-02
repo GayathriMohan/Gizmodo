@@ -23,26 +23,15 @@
         <button id="login-button" class="hidden">Log in / Sign up</button>
     </header>
     <main>
-        <section class="article-scroller-wrapper">
+        <section class="article-scroller-wrapper"></section>
+        <script type="text/x-jQuery-tmpl" id="scroller-template">
             <article class="scroller-content">
                 <figure>
-                    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--w3lWVLTP--/c_fill,fl_progressive,g_north,h_264,q_80,w_470/zcatqaexihnlr9lcm3za.jpg" alt="moview-review" class="scroller-images">
-                    <h3 id="first-article-header"><span>The First Reviews of <i>Arrival</i> Are In and They're Out of This World (Rimshot)</span></h3>
+                    <img src="${src}" alt="">
+                    <h3><span>${heading}</span></h3>
                 </figure>
             </article>
-            <article class="scroller-content">
-                <figure>
-                    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--QC0nByj_--/c_fill,fl_progressive,g_north,h_264,q_80,w_470/hgdgbqnh0nfc1lhhjqc7.jpg" alt="predator-disappears" class="scroller-images">
-                    <h3 id="second-article-header"><span>With a Single Touch, the Predator Completely Disappears From This Incredible Poster</span></h3>
-                </figure>
-            </article>
-            <article class="scroller-content">
-                <figure>
-                    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--c-FX7RX7--/c_fill,fl_progressive,g_north,h_264,q_80,w_470/eeueckhlkvszyanmem2x.jpg" alt="apple-casting" class="scroller-images">
-                    <h3 id="third-article-header"><span>Apple's Decision to Cast Jessica Alba in Its Reality Show Is an Outrage</span></h3>
-                </figure>
-            </article>
-        </section>
+        </script>
         <section class="article-content-wrapper right">
             <article class="article-content">
                 <header class="item-header">
@@ -114,6 +103,8 @@
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
 <script type="text/javascript" src="../JS/gizmodo.js"></script>
 
 </html>
