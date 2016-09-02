@@ -31,19 +31,21 @@ main {
                 &:hover:after {
                     opacity: 0.1;
                 }
-            }
-            h3 {
-                position: absolute;
-                left: 0;
-                bottom: 3px;
-                line-height: 22px;
-                white-space: normal;
-                font-family: Roboto Condensed;
-                color: white;
-                font-size: 21px;
-                span {
-                    background-color: rgba(0, 0, 0, 0.7);
-                    padding: 0 7px;
+                h3 {
+                    position: absolute;
+                    left: 0;
+                    bottom: 5px;
+                    span {
+                        display: inline;
+                        line-height: 22px;
+                        padding: 0 7px;
+                        white-space: pre-line;
+                        font-family: Roboto Condensed;
+                        color: white;
+                        font-size: 21px;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        -webkit-box-decoration-break: clone;
+                    }
                 }
             }
         }

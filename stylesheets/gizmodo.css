@@ -252,19 +252,21 @@ main section article figure:after {
 main section article figure:hover:after {
   opacity: 0.1;
 }
-/* line 35, ../sass/_scroller.scss */
-main section article h3 {
+/* line 34, ../sass/_scroller.scss */
+main section article figure h3 {
   position: absolute;
   left: 0;
-  bottom: 3px;
+  bottom: 5px;
+}
+/* line 38, ../sass/_scroller.scss */
+main section article figure h3 span {
+  display: inline;
   line-height: 22px;
-  white-space: normal;
+  padding: 0 7px;
+  white-space: pre-line;
   font-family: Roboto Condensed;
   color: white;
   font-size: 21px;
-}
-/* line 44, ../sass/_scroller.scss */
-main section article h3 span {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 0 7px;
+  -webkit-box-decoration-break: clone;
 }
