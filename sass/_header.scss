@@ -2,9 +2,9 @@
     height: 60px;
     border-bottom: $bordercolor;
     #menu-icon {
-        height: 75%;
+        height: 72%;
         padding-left: 16px;
-        padding-top: 16px;
+        padding-top: 10px;
     }
     div {
         width: 292px;
@@ -55,7 +55,7 @@
         @media only screen and(min-width: $secondbreakpoint) {
             @include inline-block;
             width: 20px;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
         }
     }
 }
