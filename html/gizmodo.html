@@ -5,21 +5,33 @@
     <title>GIZMODO.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/gizmodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
     <header id="page-header">
-        <span id="navigation-burger-icon"></span>
-        <span id="gizmodo-logo"></span>
-        <button id="login-button"></button>
+        <img src="../images/menuicon.gif" alt="gizmodo-menu" id="menu-icon">
+        <img src="../images/searchicon.png" alt="search-gizmodo" id="search-icon">
+        <div id="logo-division">
+            <h1 id="gizmodo-heading">GIZMODO</h1>
+            <a id="follow-gizmodo" href="#">
+                <img src="../images/plus.png" alt="follow-gizmodo"> Follow
+            </a>
+        </div>
+        <button id="login-button" class="hidden">Log in / Sign up</button>
     </header>
     <main>
-        <section class="article-scroller-wrapper">
-            <article class="scroller-content"></article>
-            <article class="scroller-content"></article>
-            <article class="scroller-content"></article>
-        </section>
+        <section class="article-scroller-wrapper"></section>
+        <script type="text/x-jQuery-tmpl" id="scroller-template">
+            <article class="scroller-content">
+                <figure>
+                    <img src="${src}" alt="">
+                    <h3><span>${heading}</span></h3>
+                </figure>
+            </article>
+        </script>
         <section class="article-content-wrapper right">
             <article class="article-content">
                 <header class="item-header">
@@ -90,5 +102,9 @@
         </ul>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+<script type="text/javascript" src="../JS/gizmodo.js"></script>
 
 </html>

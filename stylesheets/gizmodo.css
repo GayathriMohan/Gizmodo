@@ -1,0 +1,272 @@
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_common.scss */
+body {
+  background-color: sans-serif;
+}
+
+/* line 5, ../sass/_common.scss */
+#login-button,
+#search-icon,
+#follow-gizmodo {
+  display: none;
+}
+
+/* line 11, ../sass/_common.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_header.scss */
+#page-header {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 4, ../sass/_header.scss */
+#page-header #menu-icon {
+  height: 72%;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+/* line 9, ../sass/_header.scss */
+#page-header div {
+  width: 292px;
+  vertical-align: top;
+  height: 100%;
+  display: inline-block;
+}
+@media only screen and (min-width: 800px) {
+  /* line 9, ../sass/_header.scss */
+  #page-header div {
+    width: 35%;
+    padding-left: 30%;
+  }
+}
+/* line 18, ../sass/_header.scss */
+#page-header div h1 {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: top;
+  padding-top: 15px;
+  letter-spacing: 2px;
+}
+/* line 24, ../sass/_header.scss */
+#page-header div #follow-gizmodo {
+  color: #28ADE6;
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  padding-top: 25px;
+}
+/* line 29, ../sass/_header.scss */
+#page-header div #follow-gizmodo img {
+  width: 12px;
+  padding: 0% 6px;
+}
+/* line 33, ../sass/_header.scss */
+#page-header div #follow-gizmodo:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 600px) {
+  /* line 38, ../sass/_header.scss */
+  #page-header #login-button {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    float: right;
+    background-color: #fff;
+    color: #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 6px 12px 6px 12px;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.3px;
+  }
+}
+/* line 50, ../sass/_header.scss */
+#page-header #login-button:hover {
+  background-color: #28ADE6;
+  color: #fff;
+}
+@media only screen and (min-width: 800px) {
+  /* line 54, ../sass/_header.scss */
+  #page-header #search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 2, ../sass/_scroller.scss */
+main section {
+  width: 100%;
+  padding: 1rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #ddd;
+}
+@media only screen and (min-width: 600px) {
+  /* line 2, ../sass/_scroller.scss */
+  main section {
+    padding: 3% 0% 3% 3%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 2, ../sass/_scroller.scss */
+  main section {
+    padding: 2.5% 0% 2.5% 2.5%;
+  }
+}
+/* line 14, ../sass/_scroller.scss */
+main section article {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 74%;
+  margin-right: 4%;
+}
+@media only screen and (min-width: 600px) {
+  /* line 14, ../sass/_scroller.scss */
+  main section article {
+    width: 54%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 14, ../sass/_scroller.scss */
+  main section article {
+    width: 31%;
+  }
+}
+/* line 23, ../sass/_scroller.scss */
+main section article figure {
+  position: relative;
+}
+/* line 25, ../sass/_scroller.scss */
+main section article figure img {
+  width: 100%;
+}
+/* line 28, ../sass/_scroller.scss */
+main section article figure:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+/* line 31, ../sass/_scroller.scss */
+main section article figure:hover:after {
+  opacity: 0.1;
+}
+/* line 34, ../sass/_scroller.scss */
+main section article figure h3 {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+/* line 38, ../sass/_scroller.scss */
+main section article figure h3 span {
+  display: inline;
+  line-height: 22px;
+  padding: 0 7px;
+  white-space: pre-line;
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 21px;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-decoration-break: clone;
+}
