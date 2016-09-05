@@ -1,5 +1,5 @@
 main {
-    section {
+    .article-scroller-wrapper {
         width: 100%;
         padding: 1rem;
         @include box-sizing(border-box);
@@ -11,7 +11,7 @@ main {
         @media only screen and (min-width: $secondbreakpoint) {
             padding: 2.5% 0% 2.5% 2.5%;
         }
-        article {
+        .scroller-content {
             @include inline-block;
             @include article-size(74%, 4%);
             @media only screen and (min-width: $firstbreakpoint) {

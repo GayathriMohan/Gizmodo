@@ -407,7 +407,7 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
     width: 86%;
   }
 }
-/* line 83, ../sass/_maincontent.scss */
+/* line 84, ../sass/_maincontent.scss */
 .article-content-wrapper .item-body p {
   padding: 2% 3% 3% 3%;
   font-family: Josefin Sans;
@@ -417,33 +417,33 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
   line-height: 1.5;
 }
 @media only screen and (min-width: 600px) {
-  /* line 83, ../sass/_maincontent.scss */
+  /* line 84, ../sass/_maincontent.scss */
   .article-content-wrapper .item-body p {
     width: 75%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 93, ../sass/_maincontent.scss */
+  /* line 94, ../sass/_maincontent.scss */
   .article-content-wrapper .odd-item {
     display: table-cell;
     width: 80%;
   }
-  /* line 96, ../sass/_maincontent.scss */
+  /* line 97, ../sass/_maincontent.scss */
   .article-content-wrapper .odd-item .odd-figure {
     padding: 15px 2px 15px 15px;
     display: table-cell;
   }
-  /* line 99, ../sass/_maincontent.scss */
+  /* line 100, ../sass/_maincontent.scss */
   .article-content-wrapper .odd-item .odd-figure img {
     width: 225px;
   }
-  /* line 103, ../sass/_maincontent.scss */
+  /* line 104, ../sass/_maincontent.scss */
   .article-content-wrapper .odd-item .odd-description {
     display: table-cell;
     vertical-align: top;
     padding: 12px 10px 15px 5px;
   }
-  /* line 107, ../sass/_maincontent.scss */
+  /* line 108, ../sass/_maincontent.scss */
   .article-content-wrapper .odd-item .odd-description em {
     color: #28ADE6;
   }

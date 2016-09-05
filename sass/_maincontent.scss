@@ -1,0 +1,113 @@
+.article-content-wrapper {
+    @media only screen and (min-width: $thirdbreakpoint) {
+        width: 67%;
+        @include float-right;
+        border-left: $bordercolor;
+    }
+    .article-content {
+        width: 100%;
+        border-bottom: $bordercolor;
+        padding-top: 20px;
+        header {
+            padding: 3%;
+            h1 {
+                @include font(Roboto Condensed, 20px, bold);
+                @include fontalign(0.7px, 1.5);
+                padding-bottom: 2%;
+                @media only screen and (min-width: $thirdbreakpoint) {
+                    font-size: 22px;
+                }
+            }
+            .metadata {
+                font-size: 12px;
+                width: 42%;
+                padding-top: 8px;
+                @include inline-block;
+                span {
+                    @include font(Roboto Condensed, 15px, normal);
+                    display: block;
+                    padding-bottom: 4px;
+                    @media only screen and(min-width: $secondbreakpoint) {
+                        display: inline;
+                        padding-right: 5px;
+                    }
+                    a {
+                        color: rgba(0, 0, 0, 0.75);
+                    }
+                }
+                time {
+                    color: #aaa;
+                }
+            }
+            .view-count-container {
+                @include inline-block;
+                width: 102px;
+                @include float-right;
+                @media only screen and (min-width: $secondbreakpoint) {
+                    width: 30px;
+                }
+                div {
+                    @include inline-block;
+                    width: 30%;
+                    text-align: center;
+                    @media only screen and(min-width: $secondbreakpoint) {
+                        display: block;
+                        width: 100%;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                    span {
+                        color: #aaa;
+                        @include font(Roboto Condensed, 12px, normal);
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .item-body {
+        img {
+            width: 100%;
+            @media only screen and(min-width: $firstbreakpoint) {
+                width: 94%;
+                padding: 0 3%;
+            }
+            @media only screen and(min-width: $secondbreakpoint) {
+                width: 87%;
+            }
+            @media only screen and(min-width: $thirdbreakpoint) {
+                width: 86%;
+            }
+        }
+        p {
+            padding: 2% 3% 3% 3%;
+            @include font(Josefin Sans, 18px, normal);
+            @include fontalign(0.5px, 1.5);
+            @media only screen and (min-width: $firstbreakpoint) {
+                width: 75%;
+            }
+        }
+    }
+    @media only screen and (min-width: $firstbreakpoint) {
+        .odd-item {
+            display: table-cell;
+            width: 80%;
+            .odd-figure {
+                padding: 15px 2px 15px 15px;
+                display: table-cell;
+                img {
+                    width: 225px;
+                }
+            }
+            .odd-description {
+                display: table-cell;
+                vertical-align: top;
+                padding: 12px 10px 15px 5px;
+                em {
+                    color: #28ADE6;
+                }
+            }
+        }
+    }
+}
