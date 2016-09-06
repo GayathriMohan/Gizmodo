@@ -36,3 +36,28 @@
     opacity: 0;
     transition: opacity 100ms ease-in-out;
 }
+
+@mixin fontalign($letterspace, $lineheight) {
+    letter-spacing: $letterspace;
+    line-height: $lineheight;
+}
+
+@mixin button() {
+    background-color: #0093ec;
+    border-radius: 50px;
+    color: white;
+    border-color: #0093ec;
+    padding: 1%;
+    /*width: 100px;*/
+}
+
+@mixin footeralign($textalign,$bottommarg){
+    text-align: $textalign;
+    margin-bottom: $bottommarg;
+}
+@mixin footercontent($color,$rightmarg,$fontsiz) {
+    color:$color;
+    margin-right: $rightmarg;
+    @include font(Roboto Condensed, $fontsiz, normal);
+    @include inline-block;
+}
