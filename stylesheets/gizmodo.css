@@ -257,17 +257,19 @@ main .article-scroller-wrapper .scroller-content figure:hover:after {
 main .article-scroller-wrapper .scroller-content figure h3 {
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 3px;
+  width: 95%;
 }
-/* line 38, ../sass/_scroller.scss */
+/* line 39, ../sass/_scroller.scss */
 main .article-scroller-wrapper .scroller-content figure h3 span {
   display: inline;
   line-height: 22px;
   padding: 0 7px;
   white-space: pre-line;
   font-family: Roboto Condensed;
-  color: white;
   font-size: 21px;
+  font-weight: normal;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-decoration-break: clone;
 }
@@ -338,8 +340,11 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
 /* line 38, ../sass/_maincontent.scss */
 .article-content-wrapper .article-content header .metadata time {
   color: #aaa;
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  font-weight: normal;
 }
-/* line 42, ../sass/_maincontent.scss */
+/* line 43, ../sass/_maincontent.scss */
 .article-content-wrapper .article-content header .view-count-container {
   display: inline-block;
   vertical-align: middle;
@@ -350,12 +355,12 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
   float: right;
 }
 @media only screen and (min-width: 800px) {
-  /* line 42, ../sass/_maincontent.scss */
+  /* line 43, ../sass/_maincontent.scss */
   .article-content-wrapper .article-content header .view-count-container {
     width: 30px;
   }
 }
-/* line 49, ../sass/_maincontent.scss */
+/* line 50, ../sass/_maincontent.scss */
 .article-content-wrapper .article-content header .view-count-container div {
   display: inline-block;
   vertical-align: middle;
@@ -366,17 +371,17 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
   text-align: center;
 }
 @media only screen and (min-width: 800px) {
-  /* line 49, ../sass/_maincontent.scss */
+  /* line 50, ../sass/_maincontent.scss */
   .article-content-wrapper .article-content header .view-count-container div {
     display: block;
     width: 100%;
   }
 }
-/* line 57, ../sass/_maincontent.scss */
+/* line 58, ../sass/_maincontent.scss */
 .article-content-wrapper .article-content header .view-count-container div img {
   width: 100%;
 }
-/* line 60, ../sass/_maincontent.scss */
+/* line 61, ../sass/_maincontent.scss */
 .article-content-wrapper .article-content header .view-count-container div span {
   color: #aaa;
   font-family: Roboto Condensed;
@@ -384,30 +389,30 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
   font-weight: normal;
   padding-left: 3px;
 }
-/* line 70, ../sass/_maincontent.scss */
+/* line 71, ../sass/_maincontent.scss */
 .article-content-wrapper .item-body img {
   width: 100%;
 }
 @media only screen and (min-width: 600px) {
-  /* line 70, ../sass/_maincontent.scss */
+  /* line 71, ../sass/_maincontent.scss */
   .article-content-wrapper .item-body img {
     width: 94%;
     padding: 0 3%;
   }
 }
 @media only screen and (min-width: 800px) {
-  /* line 70, ../sass/_maincontent.scss */
+  /* line 71, ../sass/_maincontent.scss */
   .article-content-wrapper .item-body img {
     width: 87%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 70, ../sass/_maincontent.scss */
+  /* line 71, ../sass/_maincontent.scss */
   .article-content-wrapper .item-body img {
     width: 86%;
   }
 }
-/* line 83, ../sass/_maincontent.scss */
+/* line 84, ../sass/_maincontent.scss */
 .article-content-wrapper .item-body p {
   padding: 2% 3% 3% 3%;
   font-family: Josefin Sans;
@@ -417,34 +422,198 @@ main .article-scroller-wrapper .scroller-content figure h3 span {
   line-height: 1.5;
 }
 @media only screen and (min-width: 600px) {
-  /* line 83, ../sass/_maincontent.scss */
+  /* line 84, ../sass/_maincontent.scss */
   .article-content-wrapper .item-body p {
     width: 75%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 93, ../sass/_maincontent.scss */
-  .article-content-wrapper .odd-item {
-    display: table-cell;
-    width: 80%;
-  }
-  /* line 96, ../sass/_maincontent.scss */
-  .article-content-wrapper .odd-item .odd-figure {
+  /* line 94, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-figure {
     padding: 15px 2px 15px 15px;
     display: table-cell;
   }
-  /* line 99, ../sass/_maincontent.scss */
-  .article-content-wrapper .odd-item .odd-figure img {
+  /* line 97, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-figure img {
     width: 225px;
   }
-  /* line 103, ../sass/_maincontent.scss */
-  .article-content-wrapper .odd-item .odd-description {
+  /* line 101, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-description {
     display: table-cell;
     vertical-align: top;
     padding: 12px 10px 15px 5px;
   }
-  /* line 107, ../sass/_maincontent.scss */
-  .article-content-wrapper .odd-item .odd-description em {
+  /* line 105, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-description em {
     color: #28ADE6;
   }
+}
+
+/* line 1, ../sass/_trendingcontent.scss */
+.trending-articles,
+footer {
+  padding: 32px 20px 10px 20px;
+  width: 28%;
+}
+/* line 5, ../sass/_trendingcontent.scss */
+.trending-articles form,
+footer form {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+/* line 9, ../sass/_trendingcontent.scss */
+.trending-articles form h3,
+footer form h3 {
+  display: inline;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 13, ../sass/_trendingcontent.scss */
+.trending-articles form img,
+footer form img {
+  width: 15px;
+  float: right;
+}
+/* line 17, ../sass/_trendingcontent.scss */
+.trending-articles form input,
+footer form input {
+  border: none;
+  margin-top: 8%;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #aaa;
+  width: 70%;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 25, ../sass/_trendingcontent.scss */
+.trending-articles form button,
+footer form button {
+  background-color: #0093ec;
+  border-radius: 50px;
+  color: white;
+  border-color: #0093ec;
+  padding: 1%;
+  /*width: 100px;*/
+}
+/* line 29, ../sass/_trendingcontent.scss */
+.trending-articles h1,
+footer h1 {
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 32, ../sass/_trendingcontent.scss */
+.trending-articles h1 span,
+footer h1 span {
+  color: #000;
+  font-family: bold;
+}
+/* line 37, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper,
+footer .trending-article-wrapper {
+  padding-top: 6%;
+}
+/* line 39, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper figure,
+footer .trending-article-wrapper figure {
+  display: inline-block;
+  width: 32%;
+}
+/* line 42, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper figure img,
+footer .trending-article-wrapper figure img {
+  width: 100%;
+  height: 65px;
+}
+/* line 49, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content img,
+footer .trending-content img {
+  width: 100%;
+}
+/* line 52, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content h4,
+footer .trending-content h4 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5% 0% 3% 0%;
+}
+/* line 56, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content time,
+footer .trending-content time {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 64, ../sass/_trendingcontent.scss */
+  .trending-articles {
+    display: none;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  clear: both;
+  padding: 32px 6%;
+  width: 88%;
+}
+/* line 5, ../sass/_footer.scss */
+footer h3 {
+  display: block;
+}
+@media only screen and (min-width: 600px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    width: 400px;
+    margin-left: 27%;
+  }
+}
+/* line 16, ../sass/_footer.scss */
+footer #guide {
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* line 18, ../sass/_footer.scss */
+footer #guide li {
+  color: #333;
+  margin-right: 5%;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 22, ../sass/_footer.scss */
+footer #terms {
+  text-align: center;
+  margin-bottom: 10%;
+}
+/* line 24, ../sass/_footer.scss */
+footer #terms li {
+  color: #aaa;
+  margin-right: 4%;
+  font-family: Roboto Condensed;
+  font-size: 11px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
 }

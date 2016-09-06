@@ -37,6 +37,7 @@
                 }
                 time {
                     color: #aaa;
+                    @include font(Roboto Condensed, 13px, normal);
                 }
             }
             .view-count-container {
@@ -90,23 +91,19 @@
         }
     }
     @media only screen and (min-width: $firstbreakpoint) {
-        .odd-item {
+        .odd-figure {
+            padding: 15px 2px 15px 15px;
             display: table-cell;
-            width: 80%;
-            .odd-figure {
-                padding: 15px 2px 15px 15px;
-                display: table-cell;
-                img {
-                    width: 225px;
-                }
+            img {
+                width: 225px;
             }
-            .odd-description {
-                display: table-cell;
-                vertical-align: top;
-                padding: 12px 10px 15px 5px;
-                em {
-                    color: #28ADE6;
-                }
+        }
+        .odd-description {
+            display: table-cell;
+            vertical-align: top;
+            padding: 12px 10px 15px 5px;
+            em {
+                color: #28ADE6;
             }
         }
     }
