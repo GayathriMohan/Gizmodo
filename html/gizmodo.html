@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIZMODO.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/gizmodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header id="page-header">
+        <img src="../images/menuicon.gif" alt="gizmodo-menu" id="menu-icon">
+        <img src="../images/searchicon.png" alt="search-gizmodo" id="search-icon">
+        <div id="logo-division">
+            <h1 id="gizmodo-heading">GIZMODO</h1>
+            <a id="follow-gizmodo" href="#">
+                <img src="../images/plus.png" alt="follow-gizmodo"> Follow
+            </a>
+        </div>
+        <button id="login-button" class="hidden">Log in / Sign up</button>
+    </header>
+    <main>
+        <section class="article-scroller-wrapper"></section>
+        <script type="text/x-jQuery-tmpl" id="scroller-template">
+            <article class="scroller-content">
+                <figure>
+                    <img src="${src}" alt="">
+                    <h3><span>${heading}</span></h3>
+                </figure>
+            </article>
+        </script>
+        <section class="article-content-wrapper">
+            <article class="article-content">
+                <header class="item-header">
+                    <h1>
+                        <a href="">Intel Lawyers Tell John McAfee He Can't Call His Company 'John McAfee' </a>
+                    </h1>
+                    <section class="metadata">
+                        <span class="author-name"><a href="">Eve Peyser</a></span>
+                        <time class="time-of-publish">22 minutes ago</time>
+                    </section>
+                    <section class="view-count-container">
+                        <div>
+                            <img src="../images/comment.png" alt="comments-count">
+                            <span class="comment-count">23</span>
+                        </div>
+                        <div>
+                            <img src="../images/ratin.png" alt="likes-count">
+                            <span class="likes-count">1</span>
+                        </div>
+                        <div>
+                            <img src="../images/dots.png" alt="menu-dropdown">
+                            <span class="menu-dropdown"></span>
+                        </div>
+                    </section>
+                </header>
+                <section class="item-body odd-item">
+                    <figure class="odd-figure">
+                        <a href=""><img src="https://i.kinja-img.com/gawker-media/image/upload/s--32R3edVe--/c_fill,fl_progressive,g_center,h_180,q_80,w_320/teguqjqe9gcylkja79ry.jpg" alt="intel-lawyers"></a>
+                    </figure>
+                    <p class="odd-description">
+                        <a href="">Sometimes, all a man has in this world is his name, but according to Intel, antivirus pioneer and living cautionary tale John McAfee <em>doesnt even have that</em></a>
+                    </p>
+                </section>
+            </article>
+            <article class="article-content">
+                <header class="item-header">
+                    <h1>
+                        <a href="">Nerd Wins Scrabble Championship With Word You’ve Never Heard Of</a>
+                    </h1>
+                    <section class="metadata">
+                        <span class="author-name"><a href="">Eve Peyser</a></span>
+                        <time class="time-of-publish">22 minutes ago</time>
+                    </section>
+                    <section class="view-count-container">
+                        <div>
+                            <img src="../images/comment.png" alt="comments-count">
+                            <span class="comment-count">23</span>
+                        </div>
+                        <div>
+                            <img src="../images/ratin.png" alt="likes-count" id="rating">
+                            <span class="likes-count">1</span>
+                        </div>
+                        <div>
+                            <img src="../images/dots.png" alt="menu-dropdown">
+                            <span class="menu-dropdown"></span>
+                        </div>
+                    </section>
+                </header>
+                <section class="item-body">
+                    <figure>
+                        <a href=""><img src="https://i.kinja-img.com/gawker-media/image/upload/s--FyXn4huR--/c_scale,fl_progressive,q_80,w_800/pazboubayqmenbmj2qoc.jpg" alt="scrabble-champion"></a>
+                    </figure>
+                    <p>
+                        <a href="">As you probably already know, the World Scrabble Championship 2016 final took place on Saturday. Brett Smitheram, a 37-year-old east Londoner took home the grand prize of €7,000, which is equivalent to about $7,815 USD.</a>
+                    </p>
+                </section>
+            </article>
+        </section>
+        <section class="trending-articles">
+            <form>
+                <h3>Want gizmodo's email newsletter?</h3>
+                <img src="../images/close.png" alt="close">
+                <input type="text" name="subscribe" placeholder="Add your email address">
+                <button>Subscribe</button>
+            </form>
+            <h1><span>You</span> may also like</h1>
+            <div class="trending-article-wrapper">
+                <figure id="bret"><img src="../images/news1.jpg" alt="Bretlbart"></figure>
+                <figure id="phylis"><img src="../images/news2.jpg" alt="Phylisis"></figure>
+                <figure id="led"><img src="../images/news3.png" alt="led" 
+                ></figure>
+            </div>
+            <div class="trending-content">
+                <figure id="first-preview" class="hide"><img src="../images/news1.jpg" alt="Bretlbart"></figure>
+                <figure id="second-preview" class="hide"><img src="../images/news2.jpg" alt="Phylisis"></figure>
+                <figure id="third-preview" class="hide"><img src="../images/news3.png" alt="led"></figure>
+                <h4>The Most Ludicrous Parts of Breitbart’s Fawning Trump “Exclusive"</h4>
+                <time>Yesterday 8:56pm</time>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <form>
+            <h3>Want gizmodo's email newsletter?</h3>
+            <input type="text" name="subscribe" placeholder="Add your email address">
+            <button>Subscribe</button>
+        </form>
+        <ul id="guide">
+            <li>About Blog</li>
+            <li>Need Help?</li>
+            <li>Content Guide</li>
+        </ul>
+        <ul id="terms">
+            <li>Permissions</li>
+            <li>Privacy</li>
+            <li>Terms of Use</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>RSS</li>
+        </ul>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+<script type="text/javascript" src="../JS/gizmodo.js"></script>
+
+</html>

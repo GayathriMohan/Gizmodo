@@ -1,0 +1,58 @@
+
+							GIZMODO
+
+
+Project Description : The project aims to create the landing page and a linked page in reference to gizmodo.com.
+
+Visitor Interaction : Users will be able to see the articles associated with it.
+		      Comments can be entered for articles.
+
+Designing approach : Mobile first design and then scaled upwards.
+		     	-On click of an article, a link to the next page provided.
+
+Responsiveness : Responsive to fit into the device screens.
+
+Platform : Cross-platform webpage.
+
+Basic Layout:
+
+	Landing Page:
+
+		1. Header:
+
+			-Navigation menu icon to the left
+			-Logo
+			-Desktop view (Nav menu,Search icon to the left and login button to the right)
+
+		2. Body:
+		
+			-Article scroller(Recent articles)
+			-Repeated article sections
+			-Desktop view 
+				- Recent articles preview(aligned horizontally)
+				- Left column- Articles likely to be viewed
+				- Right column- Repeated Article sections
+
+
+		3. Footer:
+		
+			-A subscription part - input email address
+			-Links associated to the page(Terms of use, Guide etc...)
+			-Desktop view
+				-The above mentioned content placed at the left end
+
+		4. Article Section:
+
+			-Heading of the article
+			-Authorname and date-of-publish
+			-Image and description follows
+			-Metadata(aligned vertically) lies aside
+				-Likes count, Comment count and Dropdown menu
+		
+	Linked Page:
+
+		-Same layout as that of the landing page
+		-Comments and Replies included at the end of the article
+		-Share buttons fixed at the bottom 
+
+Limitations : Page is static expect the article links.

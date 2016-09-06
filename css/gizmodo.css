@@ -1,0 +1,648 @@
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_common.scss */
+body {
+  background-color: sans-serif;
+}
+
+/* line 5, ../sass/_common.scss */
+#login-button,
+#search-icon,
+#follow-gizmodo, .hide {
+  display: none;
+}
+
+/* line 11, ../sass/_common.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 1, ../sass/_header.scss */
+#page-header {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+/* line 4, ../sass/_header.scss */
+#page-header #menu-icon {
+  height: 72%;
+  padding-left: 16px;
+  padding-top: 10px;
+}
+/* line 9, ../sass/_header.scss */
+#page-header div {
+  width: 292px;
+  vertical-align: top;
+  height: 100%;
+  display: inline-block;
+}
+@media only screen and (min-width: 800px) {
+  /* line 9, ../sass/_header.scss */
+  #page-header div {
+    width: 35%;
+    padding-left: 30%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  /* line 9, ../sass/_header.scss */
+  #page-header div {
+    width: 190px;
+  }
+}
+/* line 21, ../sass/_header.scss */
+#page-header div h1 {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: top;
+  padding-top: 15px;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 370px) {
+  /* line 21, ../sass/_header.scss */
+  #page-header div h1 {
+    font-family: Nunito;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: top;
+    padding-top: 20px;
+  }
+}
+/* line 31, ../sass/_header.scss */
+#page-header div #follow-gizmodo {
+  color: #28ADE6;
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  padding-top: 25px;
+}
+/* line 36, ../sass/_header.scss */
+#page-header div #follow-gizmodo img {
+  width: 12px;
+  padding: 0% 6px;
+}
+/* line 40, ../sass/_header.scss */
+#page-header div #follow-gizmodo:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 370px) {
+  /* line 31, ../sass/_header.scss */
+  #page-header div #follow-gizmodo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 48, ../sass/_header.scss */
+  #page-header #login-button {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    float: right;
+    background-color: #fff;
+    color: #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 6px 12px 6px 12px;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.3px;
+  }
+}
+/* line 60, ../sass/_header.scss */
+#page-header #login-button:hover {
+  background-color: #28ADE6;
+  color: #fff;
+}
+@media only screen and (min-width: 800px) {
+  /* line 64, ../sass/_header.scss */
+  #page-header #search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 2, ../sass/_scroller.scss */
+main .article-scroller-wrapper {
+  width: 100%;
+  padding: 1rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #ddd;
+}
+@media only screen and (min-width: 600px) {
+  /* line 2, ../sass/_scroller.scss */
+  main .article-scroller-wrapper {
+    padding: 3% 0% 3% 3%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 2, ../sass/_scroller.scss */
+  main .article-scroller-wrapper {
+    padding: 2.5% 0% 2.5% 2.5%;
+  }
+}
+/* line 14, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 74%;
+  margin-right: 4%;
+}
+@media only screen and (min-width: 600px) {
+  /* line 14, ../sass/_scroller.scss */
+  main .article-scroller-wrapper .scroller-content {
+    width: 54%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 14, ../sass/_scroller.scss */
+  main .article-scroller-wrapper .scroller-content {
+    width: 31%;
+  }
+}
+/* line 23, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure {
+  position: relative;
+}
+/* line 25, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure img {
+  width: 100%;
+}
+/* line 28, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+/* line 31, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure:hover:after {
+  opacity: 0.1;
+}
+/* line 34, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure h3 {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 95%;
+}
+/* line 39, ../sass/_scroller.scss */
+main .article-scroller-wrapper .scroller-content figure h3 span {
+  display: inline;
+  line-height: 22px;
+  padding: 0 7px;
+  white-space: pre-line;
+  font-family: Roboto Condensed;
+  font-size: 21px;
+  font-weight: normal;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-decoration-break: clone;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/_maincontent.scss */
+  .article-content-wrapper {
+    width: 67%;
+    float: right;
+    border-left: 1px solid #ddd;
+  }
+}
+/* line 7, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+}
+/* line 11, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header {
+  padding: 3%;
+}
+/* line 13, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header h1 {
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+  padding-bottom: 2%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 13, ../sass/_maincontent.scss */
+  .article-content-wrapper .article-content header h1 {
+    font-size: 22px;
+  }
+}
+/* line 21, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .metadata {
+  font-size: 12px;
+  width: 42%;
+  padding-top: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 26, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .metadata span {
+  font-family: Roboto Condensed;
+  font-size: 15px;
+  font-weight: normal;
+  display: block;
+  padding-bottom: 4px;
+}
+@media only screen and (min-width: 800px) {
+  /* line 26, ../sass/_maincontent.scss */
+  .article-content-wrapper .article-content header .metadata span {
+    display: inline;
+    padding-right: 5px;
+  }
+}
+/* line 34, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .metadata span a {
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 38, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .metadata time {
+  color: #aaa;
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  font-weight: normal;
+}
+/* line 43, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .view-count-container {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 102px;
+  float: right;
+}
+@media only screen and (min-width: 800px) {
+  /* line 43, ../sass/_maincontent.scss */
+  .article-content-wrapper .article-content header .view-count-container {
+    width: 30px;
+  }
+}
+/* line 50, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .view-count-container div {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 30%;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  /* line 50, ../sass/_maincontent.scss */
+  .article-content-wrapper .article-content header .view-count-container div {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 58, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .view-count-container div img {
+  width: 100%;
+}
+/* line 61, ../sass/_maincontent.scss */
+.article-content-wrapper .article-content header .view-count-container div span {
+  color: #aaa;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 3px;
+}
+/* line 71, ../sass/_maincontent.scss */
+.article-content-wrapper .item-body img {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* line 71, ../sass/_maincontent.scss */
+  .article-content-wrapper .item-body img {
+    width: 94%;
+    padding: 0 3%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* line 71, ../sass/_maincontent.scss */
+  .article-content-wrapper .item-body img {
+    width: 87%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 71, ../sass/_maincontent.scss */
+  .article-content-wrapper .item-body img {
+    width: 86%;
+  }
+}
+/* line 84, ../sass/_maincontent.scss */
+.article-content-wrapper .item-body p {
+  padding: 2% 3% 3% 3%;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 600px) {
+  /* line 84, ../sass/_maincontent.scss */
+  .article-content-wrapper .item-body p {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 94, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-figure {
+    padding: 15px 2px 15px 15px;
+    display: table-cell;
+  }
+  /* line 97, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-figure img {
+    width: 225px;
+  }
+  /* line 101, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-description {
+    display: table-cell;
+    vertical-align: top;
+    padding: 12px 10px 15px 5px;
+  }
+  /* line 105, ../sass/_maincontent.scss */
+  .article-content-wrapper .odd-description em {
+    color: #28ADE6;
+  }
+}
+
+/* line 1, ../sass/_trendingcontent.scss */
+.trending-articles,
+footer {
+  padding: 32px 20px 10px 20px;
+  width: 28%;
+}
+/* line 5, ../sass/_trendingcontent.scss */
+.trending-articles form,
+footer form {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+/* line 9, ../sass/_trendingcontent.scss */
+.trending-articles form h3,
+footer form h3 {
+  display: inline;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 13, ../sass/_trendingcontent.scss */
+.trending-articles form img,
+footer form img {
+  width: 15px;
+  float: right;
+}
+/* line 17, ../sass/_trendingcontent.scss */
+.trending-articles form input,
+footer form input {
+  border: none;
+  margin-top: 8%;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #aaa;
+  width: 70%;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 25, ../sass/_trendingcontent.scss */
+.trending-articles form button,
+footer form button {
+  background-color: #0093ec;
+  border-radius: 50px;
+  color: white;
+  border-color: #0093ec;
+  padding: 1%;
+}
+/* line 29, ../sass/_trendingcontent.scss */
+.trending-articles h1,
+footer h1 {
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 32, ../sass/_trendingcontent.scss */
+.trending-articles h1 span,
+footer h1 span {
+  color: #000;
+}
+/* line 36, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper,
+footer .trending-article-wrapper {
+  padding-top: 6%;
+}
+/* line 38, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper figure,
+footer .trending-article-wrapper figure {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 32%;
+}
+/* line 41, ../sass/_trendingcontent.scss */
+.trending-articles .trending-article-wrapper figure img,
+footer .trending-article-wrapper figure img {
+  width: 100%;
+  height: 65px;
+}
+/* line 48, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content img,
+footer .trending-content img {
+  width: 100%;
+}
+/* line 51, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content h4,
+footer .trending-content h4 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5% 0% 3% 0%;
+}
+/* line 55, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content time,
+footer .trending-content time {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+}
+/* line 59, ../sass/_trendingcontent.scss */
+.trending-articles .trending-content #first-preview,
+footer .trending-content #first-preview {
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 64, ../sass/_trendingcontent.scss */
+  .trending-articles {
+    display: none;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  clear: both;
+  padding: 32px 6%;
+  width: 88%;
+}
+/* line 5, ../sass/_footer.scss */
+footer h3 {
+  display: block;
+}
+@media only screen and (min-width: 600px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    width: 400px;
+    margin-left: 27%;
+  }
+}
+/* line 16, ../sass/_footer.scss */
+footer #guide {
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* line 18, ../sass/_footer.scss */
+footer #guide li {
+  color: #333;
+  margin-right: 5%;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 22, ../sass/_footer.scss */
+footer #terms {
+  text-align: center;
+  margin-bottom: 10%;
+}
+/* line 24, ../sass/_footer.scss */
+footer #terms li {
+  color: #aaa;
+  margin-right: 4%;
+  font-family: Roboto Condensed;
+  font-size: 11px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
