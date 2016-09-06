@@ -15,15 +15,21 @@ var articlescroller = [
 
 $("#scroller-template").tmpl(articlescroller).appendTo(".article-scroller-wrapper");
 
+
+$hide=$(".hide");
+$firstpreview=$("#first-preview");
+$secondpreview=$("#second-preview");
+$thirdpreview=$("#third-preview");
+
 $("#bret").mouseenter(function() {
-$(".hide").hide();
-$("#first-preview").show();
+$hide.hide();
+$firstpreview.show();
 });
 $("#phylis").mouseenter(function() {
-$(".hide").hide();
-$("#second-preview").show();
+$hide.hide();
+$secondpreview.show();
 });
 $("#led").mouseenter(function() {
-$(".hide").hide();
-$("#third-preview").show();
+$hide.hide();
+$thirdpreview.show();
 });
