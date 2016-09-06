@@ -14,3 +14,16 @@ var articlescroller = [
 ];
 
 $("#scroller-template").tmpl(articlescroller).appendTo(".article-scroller-wrapper");
+
+$("#bret").mouseenter(function() {
+$(".hide").hide();
+$("#first-preview").show();
+});
+$("#phylis").mouseenter(function() {
+$(".hide").hide();
+$("#second-preview").show();
+});
+$("#led").mouseenter(function() {
+$(".hide").hide();
+$("#third-preview").show();
+});
