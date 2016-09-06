@@ -106,7 +106,13 @@ a {
     padding-left: 30%;
   }
 }
-/* line 18, ../sass/_header.scss */
+@media only screen and (max-width: 370px) {
+  /* line 9, ../sass/_header.scss */
+  #page-header div {
+    width: 190px;
+  }
+}
+/* line 21, ../sass/_header.scss */
 #page-header div h1 {
   display: inline-block;
   vertical-align: middle;
@@ -120,7 +126,17 @@ a {
   padding-top: 15px;
   letter-spacing: 2px;
 }
-/* line 24, ../sass/_header.scss */
+@media only screen and (max-width: 370px) {
+  /* line 21, ../sass/_header.scss */
+  #page-header div h1 {
+    font-family: Nunito;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: top;
+    padding-top: 20px;
+  }
+}
+/* line 31, ../sass/_header.scss */
 #page-header div #follow-gizmodo {
   color: #28ADE6;
   font-family: Roboto Condensed;
@@ -134,17 +150,23 @@ a {
   vertical-align: top;
   padding-top: 25px;
 }
-/* line 29, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 #page-header div #follow-gizmodo img {
   width: 12px;
   padding: 0% 6px;
 }
-/* line 33, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 #page-header div #follow-gizmodo:hover {
   text-decoration: underline;
 }
+@media only screen and (max-width: 370px) {
+  /* line 31, ../sass/_header.scss */
+  #page-header div #follow-gizmodo {
+    display: none;
+  }
+}
 @media only screen and (min-width: 600px) {
-  /* line 38, ../sass/_header.scss */
+  /* line 48, ../sass/_header.scss */
   #page-header #login-button {
     display: inline-block;
     vertical-align: middle;
@@ -164,13 +186,13 @@ a {
     letter-spacing: 0.3px;
   }
 }
-/* line 50, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 #page-header #login-button:hover {
   background-color: #28ADE6;
   color: #fff;
 }
 @media only screen and (min-width: 800px) {
-  /* line 54, ../sass/_header.scss */
+  /* line 64, ../sass/_header.scss */
   #page-header #search-icon {
     display: inline-block;
     vertical-align: middle;
