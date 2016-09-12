@@ -43,19 +43,20 @@
 }
 
 @mixin button() {
-    background-color: #0093ec;
+    background-color: $buttonbackground;
     border-radius: 50px;
-    color: white;
-    border-color: #0093ec;
+    color: $white;
+    border-color: $buttonbackground;
     padding: 1%;
 }
 
-@mixin footeralign($textalign,$bottommarg){
+@mixin footeralign($textalign, $bottommarg) {
     text-align: $textalign;
     margin-bottom: $bottommarg;
 }
-@mixin footercontent($color,$rightmarg,$fontsiz) {
-    color:$color;
+
+@mixin footercontent($color, $rightmarg, $fontsiz) {
+    color: $color;
     margin-right: $rightmarg;
     @include font(Roboto Condensed, $fontsiz, normal);
     @include inline-block;

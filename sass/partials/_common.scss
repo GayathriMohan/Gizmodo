@@ -2,14 +2,14 @@ body {
     background-color: $primaryfont;
 }
 
-#login-button,
-#search-icon,
-#follow-gizmodo,.hide {
+.hidden {
     display: none;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $black;
+    &:hover{
+    	text-decoration:underline;
+    }
 }
-

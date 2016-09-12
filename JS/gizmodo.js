@@ -16,7 +16,7 @@ var articlescroller = [
 $("#scroller-template").tmpl(articlescroller).appendTo(".article-scroller-wrapper");
 
 
-$hide=$(".hide");
+$hide=$(".hidecontent");
 $firstpreview=$("#first-preview");
 $secondpreview=$("#second-preview");
 $thirdpreview=$("#third-preview");

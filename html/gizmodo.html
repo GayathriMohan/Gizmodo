@@ -14,10 +14,10 @@
 <body>
     <header id="page-header">
         <img src="../images/menuicon.gif" alt="gizmodo-menu" id="menu-icon">
-        <img src="../images/searchicon.png" alt="search-gizmodo" id="search-icon">
+        <img src="../images/searchicon.png" alt="search-gizmodo" id="search-icon" class="hidden">
         <div id="logo-division">
             <h1 id="gizmodo-heading">GIZMODO</h1>
-            <a id="follow-gizmodo" href="#">
+            <a id="follow-gizmodo" href="#" class="hidden">
                 <img src="../images/plus.png" alt="follow-gizmodo"> Follow
             </a>
         </div>
@@ -44,18 +44,18 @@
                         <time class="time-of-publish">22 minutes ago</time>
                     </section>
                     <section class="view-count-container">
-                        <div>
+                        <span class="count-details">
                             <img src="../images/comment.png" alt="comments-count">
                             <span class="comment-count">23</span>
-                        </div>
-                        <div>
+                        </span>
+                        <span class="count-details">
                             <img src="../images/ratin.png" alt="likes-count">
                             <span class="likes-count">1</span>
-                        </div>
-                        <div>
+                        </span>
+                        <span class="count-details">
                             <img src="../images/dots.png" alt="menu-dropdown">
                             <span class="menu-dropdown"></span>
-                        </div>
+                        </span>
                     </section>
                 </header>
                 <section class="item-body odd-item">
@@ -77,18 +77,18 @@
                         <time class="time-of-publish">22 minutes ago</time>
                     </section>
                     <section class="view-count-container">
-                        <div>
+                        <span class="count-details">
                             <img src="../images/comment.png" alt="comments-count">
                             <span class="comment-count">23</span>
-                        </div>
-                        <div>
+                        </span>
+                        <span class="count-details">
                             <img src="../images/ratin.png" alt="likes-count" id="rating">
                             <span class="likes-count">1</span>
-                        </div>
-                        <div>
+                        </span>
+                        <span class="count-details">
                             <img src="../images/dots.png" alt="menu-dropdown">
                             <span class="menu-dropdown"></span>
-                        </div>
+                        </span>
                     </section>
                 </header>
                 <section class="item-body">
@@ -101,7 +101,7 @@
                 </section>
             </article>
         </section>
-        <section class="trending-articles">
+        <section class="trending-articles hidden">
             <form>
                 <h3>Want gizmodo's email newsletter?</h3>
                 <img src="../images/close.png" alt="close">
@@ -112,13 +112,12 @@
             <div class="trending-article-wrapper">
                 <figure id="bret"><img src="../images/news1.jpg" alt="Bretlbart"></figure>
                 <figure id="phylis"><img src="../images/news2.jpg" alt="Phylisis"></figure>
-                <figure id="led"><img src="../images/news3.png" alt="led" 
-                ></figure>
+                <figure id="led"><img src="../images/news3.png" alt="led"></figure>
             </div>
             <div class="trending-content">
-                <figure id="first-preview" class="hide"><img src="../images/news1.jpg" alt="Bretlbart"></figure>
-                <figure id="second-preview" class="hide"><img src="../images/news2.jpg" alt="Phylisis"></figure>
-                <figure id="third-preview" class="hide"><img src="../images/news3.png" alt="led"></figure>
+                <figure id="first-preview" class="hidecontent hidden"><img src="../images/news1.jpg" alt="Bretlbart"></figure>
+                <figure id="second-preview" class="hidecontent hidden"><img src="../images/news2.jpg" alt="Phylisis"></figure>
+                <figure id="third-preview" class="hidecontent hidden"><img src="../images/news3.png" alt="led"></figure>
                 <h4>The Most Ludicrous Parts of Breitbart’s Fawning Trump “Exclusive"</h4>
                 <time>Yesterday 8:56pm</time>
             </div>

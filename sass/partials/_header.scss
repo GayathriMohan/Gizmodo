@@ -29,16 +29,13 @@
             }
         }
         #follow-gizmodo {
-            color: #28ADE6;
+            color: $lightblue;
             @include font(Roboto Condensed, 13px, normal);
             @include inline-block;
             @include align(top, 25px);
             img {
                 width: 12px;
                 padding: 0% 6px;
-            }
-            &:hover {
-                text-decoration: underline;
             }
             @media only screen and (max-width: $breaksmall) {
                 display: none;
@@ -49,7 +46,7 @@
         @media only screen and (min-width: $firstbreakpoint) {
             @include inline-block;
             @include float-right;
-            @include color(#fff, #aaa);
+            @include color($white, $greytext);
             border: 1px solid rgba(0, 0, 0, 0.1);
             @include border-radius(4px);
             margin: 15px;
@@ -58,7 +55,7 @@
             letter-spacing: 0.3px;
         }
         &:hover {
-            @include color(#28ADE6, #fff);
+            @include color($lightblue, $white);
         }
     }
     #search-icon {

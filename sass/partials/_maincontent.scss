@@ -36,7 +36,7 @@
                     }
                 }
                 time {
-                    color: #aaa;
+                    color: $greytext;
                     @include font(Roboto Condensed, 13px, normal);
                 }
             }
@@ -47,7 +47,7 @@
                 @media only screen and (min-width: $secondbreakpoint) {
                     width: 30px;
                 }
-                div {
+                .count-details {
                     @include inline-block;
                     width: 30%;
                     text-align: center;
@@ -59,7 +59,7 @@
                         width: 100%;
                     }
                     span {
-                        color: #aaa;
+                        color: $greytext;
                         @include font(Roboto Condensed, 12px, normal);
                         padding-left: 3px;
                     }
@@ -82,7 +82,7 @@
             }
         }
         p {
-            padding: 2% 3% 3% 3%;
+            padding: 2% 3% 3%;
             @include font(Josefin Sans, 18px, normal);
             @include fontalign(0.5px, 1.5);
             @media only screen and (min-width: $firstbreakpoint) {
@@ -103,7 +103,7 @@
             vertical-align: top;
             padding: 12px 10px 15px 5px;
             em {
-                color: #28ADE6;
+                color: $lightblue;
             }
         }
     }

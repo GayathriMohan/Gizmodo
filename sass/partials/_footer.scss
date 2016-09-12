@@ -1,4 +1,5 @@
 footer {
+    @extend .trending-articles;
     clear: both;
     padding: 32px 6%;
     width: 88%;
@@ -14,15 +15,15 @@ footer {
         margin-left: 27%;
     }
     #guide {
-        @include footeralign(center,5%);
+        @include footeralign(center, 5%);
         li {
-            @include footercontent(#333, 5%, 14px);
+            @include footercontent($darkgrey, 5%, 14px);
         }
     }
     #terms {
-        @include footeralign(center,10%);
+        @include footeralign(center, 10%);
         li {
-            @include footercontent(#aaa, 4%, 11px);
+            @include footercontent($greytext, 4%, 11px);
         }
     }
 }
