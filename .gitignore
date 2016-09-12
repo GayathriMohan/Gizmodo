@@ -6,7 +6,7 @@ https://git-scm.com/docs/gitignore
 # git config --global core.excludesfile '~/.gitignore_global'
 # Ignore bundler config.
 .sass-cache/*
-requirement.txt/*
-architecture.txt/*
-technologystack.txt/*
-config.rb/*
+requirement.txt
+architecture.txt
+technologystack.txt
+config.rb
