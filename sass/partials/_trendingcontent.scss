@@ -1,0 +1,77 @@
+.trending-articles,
+{
+    padding: 32px 20px 10px;
+    width: 28%;
+    @media only screen and (min-width: $thirdbreakpoint) {
+        @include inline-block;
+    }
+    form {
+        background-color: $whitesmoke;
+        padding: 15px;
+        margin-bottom: 30px;
+        h1 {
+            display: inline;
+            @include font(Roboto Condensed, 16px, normal);
+        }
+        img {
+            width: 15px;
+            @include float-right;
+        }
+        input {
+            border: none;
+            margin-top: 8%;
+            background-color: $whitesmoke;
+            border-bottom: $bordertrending;
+            width: 70%;
+            @include font(Roboto Condensed, 12px, normal);
+        }
+        button {
+            @include button();
+        }
+    }
+    h2 {
+        @include font(Roboto Condensed, 20px, normal);
+        color: rgba(0, 0, 0, 0.5);
+        span {
+            color: $black;
+        }
+    }
+    .trending-article-wrapper {
+        padding-top: 6%;
+        figure {
+            @include inline-block;
+            width: 32%;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 95%;
+                content: '';
+                @include opacity(0.7);
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            img {
+                width: 100%;
+                height: 65px;
+            }
+        }
+    }
+    .trending-content {
+        img {
+            width: 100%;
+        }
+        h3 {
+            @include font(sans-serif, 16px, bold);
+            margin: 5% 0% 3% 0%;
+        }
+        time {
+            @include font(Roboto Condensed, 12px, normal);
+            color: $greytext;
+        }
+        #first-preview {
+            display: block;
+        }
+    }
+}

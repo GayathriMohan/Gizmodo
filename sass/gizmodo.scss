@@ -1,7 +1,10 @@
 @import "compass";
 @import "compass/reset";
-@import "variables";
-@import "mixins";
-@import "common";
-@import "header";
-@import "scroller";
+@import "modules/variables";
+@import "modules/mixins";
+@import "partials/common";
+@import "partials/header";
+@import "partials/scroller";
+@import "partials/maincontent";
+@import "partials/trendingcontent";
+@import "partials/footer";

@@ -1,0 +1,53 @@
+main {
+    .article-scroller-wrapper {
+        width: 100%;
+        padding: 1rem;
+        @include box-sizing(border-box);
+        @include scroller-structure();
+        border-bottom: $bordercolor;
+        @media only screen and (min-width: $firstbreakpoint) {
+            padding: 3% 0% 3% 3%;
+        }
+        @media only screen and (min-width: $secondbreakpoint) {
+            padding: 2.5% 0% 2.5% 2.5%;
+        }
+        .scroller-content {
+            @include inline-block;
+            @include article-size(74%, 4%);
+            @media only screen and (min-width: $firstbreakpoint) {
+                @include article-size(54%, 2%);
+            }
+            @media only screen and (min-width: $secondbreakpoint) {
+                width: 31%;
+            }
+            figure {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                &:after {
+                    @include article-hover;
+                }
+                &:hover:after {
+                    opacity: 0.1;
+                }
+                h1 {
+                    position: absolute;
+                    left: 0;
+                    bottom: 3px;
+                    width: 95%;
+                    span {
+                        display: inline;
+                        line-height: 22px;
+                        padding: 0 7px;
+                        white-space: pre-line;
+                        @include font(Roboto Condensed, 21px, normal);
+                        color: $white;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        -webkit-box-decoration-break: clone;
+                    }
+                }
+            }
+        }
+    }
+}

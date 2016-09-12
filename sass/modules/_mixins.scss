@@ -1,0 +1,63 @@
+@mixin color($bgcolor, $color) {
+    background-color: $bgcolor;
+    color: $color;
+}
+
+@mixin align($verticalalign, $paddingtop) {
+    vertical-align: $verticalalign;
+    padding-top: $paddingtop;
+}
+
+@mixin font($family, $size, $fweight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $fweight;
+}
+
+@mixin article-size($width, $marginright) {
+    width: $width;
+    margin-right: $marginright;
+}
+
+@mixin scroller-structure() {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+@mixin article-hover() {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 6);
+    @include opacity(0);
+    transition: opacity 100ms ease-in-out;
+}
+
+@mixin fontalign($letterspace, $lineheight) {
+    letter-spacing: $letterspace;
+    line-height: $lineheight;
+}
+
+@mixin button() {
+    background-color: $buttonbackground;
+    border-radius: 50px;
+    color: $white;
+    border-color: $buttonbackground;
+    padding: 1%;
+}
+
+@mixin footeralign($textalign, $bottommarg) {
+    text-align: $textalign;
+    margin-bottom: $bottommarg;
+}
+
+@mixin footercontent($color, $rightmarg, $fontsiz) {
+    color: $color;
+    margin-right: $rightmarg;
+    @include font(Roboto Condensed, $fontsiz, normal);
+    @include inline-block;
+}

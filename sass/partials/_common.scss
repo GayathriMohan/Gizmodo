@@ -1,0 +1,15 @@
+body {
+    background-color: $primaryfont;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover{
+    	text-decoration:underline;
+    }
+}

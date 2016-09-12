@@ -1,0 +1,26 @@
+footer {
+    @extend .trending-articles;
+    clear: both;
+    padding: 32px 6%;
+    width: 88%;
+    @media only screen and (min-width: $firstbreakpoint) {
+        width: 600px;
+        margin: auto;
+    }
+    @media only screen and (min-width: $thirdbreakpoint) {
+        width: 400px;
+        margin-left: 27%;
+    }
+    #guide {
+        @include footeralign(center, 5%);
+        li {
+            @include footercontent($darkgrey, 5%, 14px);
+        }
+    }
+    #terms {
+        @include footeralign(center, 10%);
+        li {
+            @include footercontent($greytext, 4%, 11px);
+        }
+    }
+}
