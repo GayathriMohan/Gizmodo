@@ -5,5 +5,8 @@ https://git-scm.com/docs/gitignore
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile '~/.gitignore_global'
 # Ignore bundler config.
-node_modules/*
-heroImages/*
+.sass-cache/*
+requirement.txt/*
+architecture.txt/*
+technologystack.txt/*
+config.rb/*
