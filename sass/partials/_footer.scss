@@ -3,9 +3,6 @@ footer {
     clear: both;
     padding: 32px 6%;
     width: 88%;
-    h3 {
-        display: block;
-    }
     @media only screen and (min-width: $firstbreakpoint) {
         width: 600px;
         margin: auto;
